@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14
+    container_name: beam_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: beam_test
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
