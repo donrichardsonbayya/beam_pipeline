@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# VCS / tooling
+.git/
+.gitignore
+*.log
+*.tmp
+
+# Local data / notebooks
+stream_buffer.json
+data/
+*.csv
+*.parquet
+*.ipynb
+
+# Node crap (if any)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
